@@ -1,0 +1,12 @@
+# docker-compose.yml
+
+services:
+  rasad-backend:
+    build: ./app
+    ports:
+      - 8001:8001
+
+  rasad-front:
+    build: ./front
+    ports:
+    - "8000:80"
